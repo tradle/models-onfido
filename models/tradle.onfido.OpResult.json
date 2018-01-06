@@ -1,0 +1,26 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.onfido.OpResult",
+  "subClassOf": "tradle.Enum",
+  "title": "Onfido Operation Status",
+  "description": "status of an Onfido operation: a report or a check",
+  "properties": {
+    "result": {
+      "type": "string"
+    }
+  },
+  "enum": [
+    {
+      "id": "clear",
+      "title": "Success"
+    },
+    {
+      "id": "consider",
+      "title": "Failure"
+    },
+    {
+      "id": "unidentified",
+      "title": "No matches"
+    }
+  ]
+}

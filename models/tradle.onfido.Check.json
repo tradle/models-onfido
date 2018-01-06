@@ -1,0 +1,32 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.onfido.Check",
+  "title": "Onfido Check",
+  "properties": {
+    "rawData": {
+      "type": "object",
+      "range": "json"
+    },
+    "reportsOrdered": {
+      "type": "array",
+      "inlined": true,
+      "items": {
+        "ref": "tradle.onfido.ReportType"
+      }
+    },
+    "status": {
+      "type": "object",
+      "ref": "tradle.onfido.CheckStatus"
+    },
+    "result": {
+      "type": "object",
+      "ref": "tradle.onfido.OpResult"
+    },
+    "applicantId": {
+      "type": "string"
+    },
+    "checkId": {
+      "type": "string"
+    }
+  }
+}

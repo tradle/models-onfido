@@ -1,0 +1,25 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.onfido.ReportType",
+  "subClassOf": "tradle.Enum",
+  "title": "Onfido Report Type",
+  "properties": {
+    "type": {
+      "type": "string"
+    }
+  },
+  "enum": [
+    {
+      "id": "document",
+      "title": "Document"
+    },
+    {
+      "id": "facialsimilarity",
+      "title": "Facial Similarity"
+    },
+    {
+      "id": "identity",
+      "title": "Identity"
+    }
+  ]
+}

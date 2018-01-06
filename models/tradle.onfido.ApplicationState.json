@@ -1,0 +1,49 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.onfido.ApplicationState",
+  "title": "Onfido Application State",
+  "properties": {
+    "applicant": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "application": {
+      "type": "object",
+      "ref": "tradle.Application"
+    },
+    "onfidoApplicant": {
+      "type": "object",
+      "range": "json"
+    },
+    "selfie": {
+      "type": "object",
+      "ref": "tradle.Selfie"
+    },
+    "photoID": {
+      "type": "object",
+      "ref": "tradle.PhotoID"
+    },
+    "applicantDetails": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.Form"
+      }
+    },
+    "check": {
+      "type": "object",
+      "ref": "tradle.onfido.Check"
+    },
+    "checkStatus": {
+      "type": "object",
+      "ref": "tradle.onfido.CheckStatus"
+    },
+    "errors": {
+      "type": "object",
+      "range": "json"
+    },
+    "result": {
+      "type": "object",
+      "ref": "tradle.onfido.OpResult"
+    }
+  }
+}

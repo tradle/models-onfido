@@ -1,0 +1,34 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.onfido.ReportStatus",
+  "subClassOf": "tradle.Enum",
+  "title": "Onfido Report Status",
+  "description": "status of an Onfido report",
+  "properties": {
+    "status": {
+      "type": "string"
+    }
+  },
+  "enum": [
+    {
+      "id": "awaitingdata",
+      "title": "Awaiting approval"
+    },
+    {
+      "id": "awaitingapproval",
+      "title": "Awaiting approval"
+    },
+    {
+      "id": "complete",
+      "title": "Complete"
+    },
+    {
+      "id": "withdrawn",
+      "title": "Withdrawn"
+    },
+    {
+      "id": "paused",
+      "title": "Paused"
+    }
+  ]
+}

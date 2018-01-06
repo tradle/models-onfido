@@ -1,0 +1,38 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.onfido.CheckStatus",
+  "subClassOf": "tradle.Enum",
+  "title": "Onfido Operation Status",
+  "description": "status of an Onfido operation: a report or a check",
+  "properties": {
+    "status": {
+      "type": "string"
+    }
+  },
+  "enum": [
+    {
+      "id": "inprogress",
+      "title": "In progress"
+    },
+    {
+      "id": "awaitingapplicant",
+      "title": "Awaiting applicant"
+    },
+    {
+      "id": "complete",
+      "title": "Complete"
+    },
+    {
+      "id": "withdrawn",
+      "title": "Withdrawn"
+    },
+    {
+      "id": "paused",
+      "title": "Paused"
+    },
+    {
+      "id": "reopened",
+      "title": "Reopened"
+    }
+  ]
+}
