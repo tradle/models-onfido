@@ -1,0 +1,18 @@
+{
+  "id": "tradle.onfido.MyCustomerVerification",
+  "title": "My Customer Verification",
+  "subClassOf": "tradle.MyProduct",
+  "type": "tradle.Model",
+  "properties": {
+    "myProductId": {
+      "title": "ID",
+      "type": "string"
+    }
+  },
+  "required": [
+    "myProductId"
+  ],
+  "viewCols": [
+    "myProductId"
+  ]
+}
