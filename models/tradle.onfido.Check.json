@@ -2,8 +2,35 @@
   "type": "tradle.Model",
   "id": "tradle.onfido.Check",
   "title": "Onfido Check",
+  "subClassOf": "tradle.Check",
   "properties": {
+    "applicant": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "application": {
+      "type": "object",
+      "ref": "tradle.Application"
+    },
+    "selfie": {
+      "type": "object",
+      "ref": "tradle.Selfie"
+    },
+    "photoID": {
+      "type": "object",
+      "ref": "tradle.PhotoID"
+    },
+    "applicantDetails": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.Form"
+      }
+    },
     "rawData": {
+      "type": "object",
+      "range": "json"
+    },
+    "errors": {
       "type": "object",
       "range": "json"
     },
@@ -16,17 +43,30 @@
     },
     "status": {
       "type": "object",
+      "ref": "tradle.Status",
+      "readOnly": true
+    },
+    "onfidoStatus": {
+      "type": "object",
       "ref": "tradle.onfido.CheckStatus"
     },
-    "result": {
+    "onfidoResult": {
       "type": "object",
       "ref": "tradle.onfido.OpResult"
     },
-    "applicantId": {
-      "type": "string"
+    "onfidoApplicant": {
+      "type": "object",
+      "range": "json"
     },
-    "checkId": {
+    "onfidoCheckId": {
       "type": "string"
     }
-  }
+  },
+  "primaryKeys": {
+    "hashKey": "application._permalink",
+    "rangeKey": "_permalink"
+  },
+  "indexes": [
+    "onfidoCheckId"
+  ]
 }
