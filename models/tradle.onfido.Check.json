@@ -70,7 +70,13 @@
     "rangeKey": "_permalink"
   },
   "indexes": [
-    "onfidoCheckId"
+    "onfidoCheckId",
+    {
+      "hashKey": "_permalink",
+      "rangeKey": {
+        "template": "_"
+      }
+    }
   ],
   "required": [
     "applicant",
