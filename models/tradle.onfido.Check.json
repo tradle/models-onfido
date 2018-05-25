@@ -46,6 +46,9 @@
       "ref": "tradle.Status",
       "readOnly": true
     },
+    "dateChecked": {
+      "type": "date"
+    },
     "onfidoStatus": {
       "type": "object",
       "ref": "tradle.onfido.CheckStatus"
@@ -68,5 +71,15 @@
   },
   "indexes": [
     "onfidoCheckId"
+  ],
+  "required": [
+    "applicant",
+    "application",
+    "reportsOrdered"
+  ],
+  "viewCols": [
+    "status",
+    "dateChecked",
+    "reportsOrdered"
   ]
 }
