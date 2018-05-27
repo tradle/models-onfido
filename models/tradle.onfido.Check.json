@@ -26,6 +26,15 @@
         "ref": "tradle.Form"
       }
     },
+    "inputs_group": {
+      "type": "string",
+      "title": "Data sent to Onfido",
+      "list": [
+        "selfie",
+        "photoID",
+        "applicantDetails"
+      ]
+    },
     "rawData": {
       "type": "object",
       "range": "json"
@@ -86,6 +95,8 @@
   "viewCols": [
     "status",
     "dateChecked",
-    "reportsOrdered"
+    "reportsOrdered",
+    "inputs_group",
+    "rawData"
   ]
 }
