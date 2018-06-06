@@ -72,6 +72,9 @@
     },
     "onfidoCheckId": {
       "type": "string"
+    },
+    "message": {
+      "type": "string"
     }
   },
   "indexes": [
@@ -98,6 +101,7 @@
   ],
   "viewCols": [
     "status",
+    "message",
     "dateChecked",
     "reportsOrdered",
     "inputs_group",
