@@ -74,7 +74,9 @@
       "type": "string"
     },
     "message": {
-      "type": "string"
+      "type": "string",
+      "readOnly": true,
+      "displayName": true
     }
   },
   "indexes": [
