@@ -35,6 +35,9 @@
         "applicantDetails"
       ]
     },
+    "faceMatchConfidence": {
+      "type": "number"
+    },
     "rawData": {
       "type": "object",
       "range": "json"
@@ -104,6 +107,7 @@
   "viewCols": [
     "status",
     "message",
+    "faceMatchConfidence",
     "dateChecked",
     "reportsOrdered",
     "inputs_group",
