@@ -80,6 +80,10 @@
       "type": "string",
       "readOnly": true,
       "displayName": true
+    },
+    "provider": {
+      "type": "string",
+      "default": "Onfido"
     }
   },
   "indexes": [
@@ -107,6 +111,7 @@
   "viewCols": [
     "status",
     "message",
+    "provider",
     "faceMatchConfidence",
     "dateChecked",
     "reportsOrdered",
