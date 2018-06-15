@@ -87,10 +87,7 @@
     }
   },
   "indexes": [
-    {
-      "hashKey": "_t",
-      "rangeKey": "_time"
-    },
+    "onfidoCheckId",
     {
       "hashKey": "_permalink",
       "rangeKey": {
@@ -101,7 +98,10 @@
       "hashKey": "application._permalink",
       "rangeKey": "_permalink"
     },
-    "onfidoCheckId"
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    }
   ],
   "required": [
     "applicant",
