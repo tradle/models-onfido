@@ -89,12 +89,6 @@
   "indexes": [
     "onfidoCheckId",
     {
-      "hashKey": "_permalink",
-      "rangeKey": {
-        "template": "_"
-      }
-    },
-    {
       "hashKey": "application._permalink",
       "rangeKey": "_permalink"
     },
