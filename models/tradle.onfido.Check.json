@@ -84,6 +84,9 @@
     "provider": {
       "type": "string",
       "default": "Onfido"
+    },
+    "aspects": {
+      "type": "string"
     }
   },
   "indexes": [
